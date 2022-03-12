@@ -1,0 +1,171 @@
+:root {
+    --nav-width: 246px;
+    
+    --first-color: #0C5DF4;
+    --bg-color: #2A3354;
+    --sub-color: #B6CEFC;
+    --white-color: #FFF;
+
+    --body-font: 'Poppins', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+
+    --z-fixed: 100;
+  }
+
+  *,::before, ::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    padding: 2rem 0 0 6.75rem;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    transition: .5s;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    padding: 1.5rem 1.5rem 2rem;
+    transition: .5s;
+    z-index: var(--z-fixed);
+  }
+
+  .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+
+  .nav::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  .reven__logo {
+    background-color: #0C5DF4;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  .crm__logo {
+    text-transform: uppercase;
+    font-size: 10.5px;
+    color: #909ABB;
+    padding-left: 10px;
+  }
+
+  .nav__logo {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+
+  background-color: #202845;
+  border: 1px solid #404867;
+  padding: 7px;
+  color: #fff;
+  border-radius: 3px;
+  }
+
+  .number {
+    background-color: #C93636;
+    border-radius: 3px;
+    padding: 2px;
+  }
+
+  .nav__link {
+    display: grid;
+    grid-template-columns: max-content max-content; 
+    align-items: center;
+    column-gap: .75rem;
+    padding: .25rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    cursor: pointer;
+  }
+/* 
+  .nav__link:hover {
+    background-color: var(--first-color);
+  } */
+
+  .nav__icon {
+    font-size: 1.25rem;
+  }
+
+  .nav__name {
+    font-size: var(--small-font-size);
+  }
+
+  .collapse {
+    grid-template-columns: 20px max-content 1fr;
+  }
+
+  .collapse__link {
+    justify-self: flex-end;
+    transition: .5s;
+  }
+
+  .collapse__menu {
+    display: none;
+    padding: .75rem 2.25rem;
+  }
+
+  .collapse__sublink {
+    color: var(--sub-color);
+    font-size: var(--small-font-size);
+  }
+
+  .collapse__sublink:hover {
+    color: var(--white-color);
+  }
+
+
+  /* Show Collapse */
+  .showCollapse {
+    display: block;
+  }
+
+  /* Rotate Icon */
+  .rotate {
+    transform: rotate(180deg);
+    transition: .5s;
+  }
