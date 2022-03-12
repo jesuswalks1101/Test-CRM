@@ -78,12 +78,7 @@
     padding: 3px;
   }
 
-  .crm__logo {
-    text-transform: uppercase;
-    font-size: 10.5px;
-    color: #909ABB;
-    padding-left: 10px;
-  }
+ 
 
   .nav__logo {
     color: var(--white-color);
@@ -91,17 +86,29 @@
     font-size: 20px;
   }
 
+  .crm__logo {
+    text-transform: uppercase;
+    font-size: 10.5px;
+    color: #909ABB;
+    padding-left: 10px;
+  }
+
   select {
   position: relative;
   display: inline-block;
+  margin-top: 5px;
   margin-bottom: 15px;
   width: 100%;
 
   background-color: #202845;
   border: 1px solid #404867;
-  padding: 7px;
+  padding: 9px;
   color: #fff;
   border-radius: 3px;
+  }
+
+  .select {
+    padding-bottom: 20px;
   }
 
   .number {
