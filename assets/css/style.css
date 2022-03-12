@@ -150,7 +150,7 @@
     justify-self: flex-end;
     transition: .5s;
   }
-
+  
   .collapse__menu {
     display: none;
     padding: .75rem 2.25rem;
@@ -176,3 +176,37 @@
     transform: rotate(180deg);
     transition: .5s;
   }
+
+/* Dropdown */
+/* .button ion-icon {
+  float: right;
+}
+
+.nav-dropdown ul {
+  background: #202845;
+  list-style: none;
+  width: 100%;
+  border-radius: 3px;
+  display: none;
+}
+
+[id^=btn]:checked + ul {
+  display: block;
+}
+
+.nav-dropdown ul li {
+  padding: 8px;
+}
+
+.nav-dropdown ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-dropdown ul li ion-icon {
+  float: right;
+}
+ input {
+   display: none;
+ } */
