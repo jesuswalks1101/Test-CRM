@@ -146,14 +146,25 @@
     grid-template-columns: 20px max-content 1fr;
   }
 
+  .collapse2 {
+    grid-template-columns: 130px 1fr;
+    margin-left: -9px;
+    margin-top: 8px;
+  }
+
   .collapse__link {
     justify-self: flex-end;
     transition: .5s;
   }
-  
+
   .collapse__menu {
     display: none;
     padding: .75rem 2.25rem;
+  }
+
+  .collapse__menu2 {
+    display: none;
+    padding: .75rem 0;
   }
 
   .collapse__sublink {
